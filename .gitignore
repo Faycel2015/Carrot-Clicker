@@ -77,7 +77,7 @@ Desktop.ini
 # User-specific settings and project preferences for Unity Hub
 .local/
 
-# **REMOVE THIS LINE** (Don't ignore Unity's LFS-tracked files like `.unity`, `.prefab`, `.asset`)
+# Do not ignore Unity's LFS-tracked files (such as .unity, .prefab, .asset)
 # **/*.asset
 # **/*.unity
 # **/*.prefab
@@ -90,6 +90,9 @@ Desktop.ini
 *.avi
 *.mov
 *.obj
+*.wav
+*.mp3
+*.png
 
 # Optional: Ignore certain build files or platform-specific packages
 *.apk
@@ -100,7 +103,7 @@ Desktop.ini
 
 # Ignore large files that exceed GitHub's size limits
 # Large assets/files (automatically tracked by Git LFS)
-# Add more file extensions if necessary (e.g., .dae, .3ds, .png, etc.)
+# Add more file extensions if necessary (e.g., .dae, .3ds, etc.)
 
 # Ignore temporary or generated files
 *.bak
