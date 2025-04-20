@@ -1,8 +1,10 @@
 using UnityEngine;
+using TMPro;
 
 public class CarrotManager : MonoBehaviour
 {
     [Header(" Data ")]
+    [SerializeField] private TextMeshProUGUI carrotsText;
     [SerializeField] private double totalCarrotsCount;
     [SerializeField] private int carrotIncrement;
 
@@ -32,9 +34,16 @@ public class CarrotManager : MonoBehaviour
     private void CarrotClickedCallback()
     {
         totalCarrotsCount += carrotIncrement;
+
+        UpdateCarrotsText();
+
         SaveData();
     }
 
+    private void UpdateCarrotsText()
+    {
+        carrotsText.text = totalCarrotsCount + " Carrots!";
+    }
     private void SaveData()
     {
         PlayerPrefs.SetString("Carrots", totalCarrotsCount.ToString());
@@ -42,5 +51,7 @@ public class CarrotManager : MonoBehaviour
     private void LoadData()
     {
         double.TryParse(PlayerPrefs.GetString("Carrots"), out totalCarrotsCount);
+
+        UpdateCarrotsText();
     }
 }
