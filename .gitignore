@@ -113,4 +113,16 @@ Desktop.ini
 *.log
 
 # Ignore bundled libraries or external dependencies
-**/Library/PackageCache/*
+# Ignore large files that exceed GitHub's size limits
+# Large assets/files (automatically tracked by Git LFS)
+# Add more file extensions if necessary (e.g., .dae, .3ds, etc.)
+
+# Ignore temporary or generated files
+*.bak
+*.swp
+*.swo
+*.tmp
+*.log
+
+# Ignore Library/PackageCache folder and its contents
+Library/PackageCache/*
