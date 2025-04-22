@@ -66,7 +66,7 @@ public class CarrotManager : MonoBehaviour
 
     private void UpdateCarrotsText()
     {
-        carrotsText.text = totalCarrotsCount + " Carrots!";
+        carrotsText.text = totalCarrotsCount.ToString("F0") + " Carrots!";
     }
 
     private void FrenzyModeStartedCallback()
