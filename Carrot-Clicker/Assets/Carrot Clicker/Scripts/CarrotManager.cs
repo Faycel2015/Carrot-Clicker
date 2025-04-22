@@ -3,6 +3,8 @@ using TMPro;
 
 public class CarrotManager : MonoBehaviour
 {
+    public static CarrotManager instance;
+
     [Header(" Elements ")]
     [SerializeField] private TextMeshProUGUI carrotsText;
 
@@ -13,6 +15,11 @@ public class CarrotManager : MonoBehaviour
 
     private void Awake()
     {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+
         LoadData();
         carrotIncrement = 1;
         InputManager.onCarrotClicked += CarrotClickedCallback;
@@ -37,6 +44,15 @@ public class CarrotManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void AddCarrots(float value)
+    {
+        totalCarrotsCount += value;
+
+        UpdateCarrotsText();
+
+        SaveData();
     }
 
     private void CarrotClickedCallback()

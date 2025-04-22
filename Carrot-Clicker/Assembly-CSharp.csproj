@@ -67,6 +67,7 @@
     <Compile Include="Assets/Carrot Clicker/Scripts/InputManager.cs" />
     <Compile Include="Assets/LeanTween/Framework/LeanTest.cs" />
     <Compile Include="Assets/LeanTween/Testing/TestingDescr.cs" />
+    <Compile Include="Assets/Carrot Clicker/Scripts/AutoClickManager.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/GeneralBasics2d.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/TestingZLegacy.cs" />
     <Compile Include="Assets/Carrot Clicker/Scripts/CarrotManager.cs" />
