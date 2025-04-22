@@ -89,6 +89,7 @@
     <Compile Include="Assets/LeanTween/Framework/LeanSmooth.cs" />
     <Compile Include="Assets/LeanTween/Testing/TestingMaxTweens.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/GeneralUISpace.cs" />
+    <Compile Include="Assets/Carrot Clicker/Scripts/BonusParticle.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/PathSplines.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/PathSplineTrack.cs" />

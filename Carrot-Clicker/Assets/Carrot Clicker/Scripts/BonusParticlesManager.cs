@@ -3,6 +3,7 @@ using UnityEngine;
 public class BonusParticlesManager : MonoBehaviour
 {
     [Header(" Elements ")]
+    [SerializeField] private CarrotManager carrotManager;
     [SerializeField] private GameObject bonusParticlePrefab;
     private void Awake()
     {
@@ -28,7 +29,10 @@ public class BonusParticlesManager : MonoBehaviour
 
     private void CarrotClickedCallback(Vector2 clickedPosition)
     {
-        Instantiate(bonusParticlePrefab, clickedPosition, Quaternion.identity, transform);
+        GameObject bonusParticleIstance = Instantiate(bonusParticlePrefab, clickedPosition, Quaternion.identity, transform);
+
+        bonusParticleIstance.GetComponent<BonusParticle>().Configure(carrotManager.GetCurrentMultiplier());
+        Destroy(bonusParticleIstance, 1);
     }
 
 }

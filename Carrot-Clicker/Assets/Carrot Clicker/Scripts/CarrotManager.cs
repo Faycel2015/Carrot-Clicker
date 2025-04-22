@@ -3,20 +3,28 @@ using TMPro;
 
 public class CarrotManager : MonoBehaviour
 {
-    [Header(" Data ")]
+    [Header(" Elements ")]
     [SerializeField] private TextMeshProUGUI carrotsText;
+
+    [Header(" Data ")]
     [SerializeField] private double totalCarrotsCount;
-    [SerializeField] private int carrotIncrement;
+    [SerializeField] private int frenzyModeMultiplier;
+    private int carrotIncrement;
 
     private void Awake()
     {
         LoadData();
+        carrotIncrement = 1;
         InputManager.onCarrotClicked += CarrotClickedCallback;
+        Carrot.onFrenzyModeStarted += FrenzyModeStartedCallback;
+        Carrot.onFrenzyModeStopped += FrenzyModeStoppedCallback;
     }
 
     private void OnDestroy()
     {
         InputManager.onCarrotClicked -= CarrotClickedCallback;
+        Carrot.onFrenzyModeStarted -= FrenzyModeStartedCallback;
+        Carrot.onFrenzyModeStopped -= FrenzyModeStoppedCallback;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -44,6 +52,16 @@ public class CarrotManager : MonoBehaviour
     {
         carrotsText.text = totalCarrotsCount + " Carrots!";
     }
+
+    private void FrenzyModeStartedCallback()
+    {
+        carrotIncrement = frenzyModeMultiplier;
+    }
+
+    private void FrenzyModeStoppedCallback()
+    {
+        carrotIncrement = 1;
+    }
     private void SaveData()
     {
         PlayerPrefs.SetString("Carrots", totalCarrotsCount.ToString());
@@ -53,5 +71,10 @@ public class CarrotManager : MonoBehaviour
         double.TryParse(PlayerPrefs.GetString("Carrots"), out totalCarrotsCount);
 
         UpdateCarrotsText();
+    }
+
+    public int GetCurrentMultiplier()
+    {
+        return carrotIncrement;
     }
 }

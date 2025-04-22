@@ -581,6 +581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 682378926}
+  - component: {fileID: 682378927}
   m_Layer: 0
   m_Name: Bonus Particles Manager
   m_TagString: Untagged
@@ -603,6 +604,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1096981872}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &682378927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682378925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7d07c16c94e43d494a58b9bd5aab40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carrotManager: {fileID: 1290194954}
+  bonusParticlePrefab: {fileID: 6122154164955098790, guid: 221e54a60de75484da32b76c49da2664, type: 3}
 --- !u!1 &750646349
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,6 +834,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carrotRendererTransform: {fileID: 2106694476}
+  fillImage: {fileID: 0}
+  fillRate: 0
 --- !u!1 &1089788989
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +1013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carrotsText: {fileID: 596528628}
   totalCarrotsCount: 0
-  carrotIncrement: 0
+  frenzyModeMultiplier: 15
 --- !u!4 &1290194955
 Transform:
   m_ObjectHideFlags: 0

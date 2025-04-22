@@ -273,6 +273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7963057314161289218}
   - component: {fileID: 1057896913695923790}
+  - component: {fileID: -6663689243602312818}
   m_Layer: 0
   m_Name: Bonus Particle
   m_TagString: Untagged
@@ -319,3 +320,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-6663689243602312818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6122154164955098790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77722de19206a4c5b945633cd43ddb72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonusText: {fileID: 7840018659397594096}
