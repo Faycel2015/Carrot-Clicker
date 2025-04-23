@@ -99,6 +99,7 @@
     <Compile Include="Assets/LeanTween/Examples/Scripts/LogoCinematic.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/GeneralAdvancedTechniques.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/GeneralEventsListeners.cs" />
+    <Compile Include="Assets/Carrot Clicker/Scripts/UIShopManager.cs" />
     <Compile Include="Assets/LeanTween/Framework/LeanTweenExt.cs" />
     <Compile Include="Assets/LeanTween/Framework/LeanAudio.cs" />
     <Compile Include="Assets/LeanTween/Framework/LTDescrOptional.cs" />
@@ -120,6 +121,7 @@
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets/Mega Hyper Casual GUI Pack/Font/OFL.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets/LeanTween/ReadMe.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
