@@ -39,15 +39,16 @@ public class AutoClickManager : MonoBehaviour
     }
     private void SpawnBunnies()
     {
-        // Destory all of the bunnies
+        // Destroy all of the bunnies
         while (rotator.childCount > 0)
         {
             Transform bunny = rotator.GetChild(0);
             bunny.SetParent(null);
-            Destroy(gameObject);
+            Destroy(bunny.gameObject);
         }
 
         int bunnyCount = Mathf.Min(level, 36);
+        Debug.Log("Spawning " + bunnyCount + " bunnies. Level: " + level);
 
         for (int i = 0; i < bunnyCount; i++)
         {
@@ -60,6 +61,8 @@ public class AutoClickManager : MonoBehaviour
             GameObject bunnyInstance = Instantiate(bunnyPrefab, position, Quaternion.identity, rotator);
             bunnyInstance.transform.up = position.normalized;
         }
+
+        Debug.Log("After spawning, rotator has " + rotator.childCount + " children");
     }
 
     private void AddCarrots()
@@ -87,14 +90,31 @@ public class AutoClickManager : MonoBehaviour
         if (rotator.childCount <= 0)
             return;
 
-        LeanTween.cancel(gameObject);
+        if (currentBunnyIndex >= rotator.childCount)
+        {
+            ResetBunniesAnimation();
+            return;
+        }
 
-        for (int i = 0; i < rotator.childCount; i++)
-            LeanTween.cancel(rotator.GetChild(i).gameObject);
+        Transform bunnyTransform = rotator.GetChild(currentBunnyIndex);
 
-        LeanTween.moveLocalY(rotator.GetChild(currentBunnyIndex).GetChild(0).gameObject, -0.5f, .25f)
-        .setLoopPingPong(1)
-        .setOnComplete(AnimateNextBunny);
+        // Check if bunny has children
+        if (bunnyTransform.childCount > 0)
+        {
+            LeanTween.cancel(gameObject);
+
+            for (int i = 0; i < rotator.childCount; i++)
+                LeanTween.cancel(rotator.GetChild(i).gameObject);
+
+            LeanTween.moveLocalY(bunnyTransform.GetChild(0).gameObject, -0.5f, .25f)
+            .setLoopPingPong(1)
+            .setOnComplete(AnimateNextBunny);
+        }
+        else
+        {
+            // Skip this bunny and move to the next one if it has no children
+            AnimateNextBunny();
+        }
     }
 
     private void AnimateNextBunny()

@@ -67,6 +67,7 @@
     <Compile Include="Assets/Carrot Clicker/Scripts/InputManager.cs" />
     <Compile Include="Assets/LeanTween/Framework/LeanTest.cs" />
     <Compile Include="Assets/LeanTween/Testing/TestingDescr.cs" />
+    <Compile Include="Assets/Layer Lab/Scripts/PanelControl.cs" />
     <Compile Include="Assets/Carrot Clicker/Scripts/AutoClickManager.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/GeneralBasics2d.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/TestingZLegacy.cs" />
@@ -93,6 +94,8 @@
     <Compile Include="Assets/Carrot Clicker/Scripts/BonusParticle.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/PathSplines.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs" />
+    <Compile Include="Assets/Carrot Clicker/Scripts/UpgradeButton.cs" />
+    <Compile Include="Assets/Layer Lab/GUI Pro-CasualGame/Extensions/UIParticle/UIParticleSystem.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/PathSplineTrack.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/PathSpline.cs" />
     <Compile Include="Assets/LeanTween/Testing/TestingSequencer.cs" />
@@ -101,6 +104,7 @@
     <Compile Include="Assets/LeanTween/Examples/Scripts/GeneralEventsListeners.cs" />
     <Compile Include="Assets/Carrot Clicker/Scripts/UIShopManager.cs" />
     <Compile Include="Assets/LeanTween/Framework/LeanTweenExt.cs" />
+    <Compile Include="Assets/Carrot Clicker/Scripts/UpgradeSO.cs" />
     <Compile Include="Assets/LeanTween/Framework/LeanAudio.cs" />
     <Compile Include="Assets/LeanTween/Framework/LTDescrOptional.cs" />
     <Compile Include="Assets/LeanTween/Testing/TestingIssue.cs" />
@@ -109,9 +113,11 @@
     <Compile Include="Assets/Carrot Clicker/Scripts/BonusParticlesManager.cs" />
     <Compile Include="Assets/LeanTween/Testing/Testing248.cs" />
     <Compile Include="Assets/LeanTween/Testing/TestingColorTweening.cs" />
+    <Compile Include="Assets/Carrot Clicker/Scripts/ShopManager.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/GeneralSimpleUI.cs" />
     <Compile Include="Assets/LeanTween/Testing/Testing243.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/PathBezier.cs" />
+    <Compile Include="Assets/Layer Lab/Scripts/PanelView.cs" />
     <Compile Include="Assets/LeanTween/Testing/Testing246.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/TestingZLegacyExt.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/PathSpline2d.cs" />
@@ -125,10 +131,12 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets/LeanTween/ReadMe.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+    <None Include="Assets/Layer Lab/GUI Pro-CasualGame/Extensions/UIParticle/hidden particle.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
     <None Include="Assets/LeanTween/License.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets/Layer Lab/GUI Pro-CasualGame/ResourcesData/Shader &amp; Materials/UIAdditive.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
     <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
@@ -136,9 +144,12 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
+    <None Include="Assets/Layer Lab/GUI Pro-CasualGame/+README+/LayerLab_UserAssetGuide.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+    <None Include="Assets/Layer Lab/GUI Pro-CasualGame/ResourcesData/Fonts/OFL.txt" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+    <None Include="Assets/Layer Lab/GUI Pro-CasualGame/ResourcesData/Shader &amp; Materials/MobileAdditive.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
