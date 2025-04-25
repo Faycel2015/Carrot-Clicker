@@ -73,6 +73,7 @@
     <Compile Include="Assets/LeanTween/Examples/Scripts/TestingZLegacy.cs" />
     <Compile Include="Assets/Carrot Clicker/Scripts/CarrotManager.cs" />
     <Compile Include="Assets/LeanTween/Testing/TestingSceneSwitching.cs" />
+    <Compile Include="Assets/Carrot Clicker/Scripts/UpgradeManager.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/GeneralSequencer.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/PathBezier2d.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/PathSplinePerformance.cs" />

@@ -15,7 +15,17 @@ public class UpgradeButton : MonoBehaviour
     {
         iconImage.sprite = icon;
         titleText.text = title;
+
+        UpdateVisuals(subtitle, price);
+    }
+
+    public void UpdateVisuals(string subtitle, string price)
+    {
         subtitleText.text = subtitle;
         priceText.text = price;
+    }
+    public Button GetButton()
+    {
+        return button;
     }
 }

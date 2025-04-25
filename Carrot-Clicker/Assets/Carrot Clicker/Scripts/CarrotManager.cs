@@ -37,13 +37,33 @@ public class CarrotManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        AddCarrots(5000);
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    public bool TryPurchase(double price)
+    {
+        if(price >= totalCarrotsCount)
+        {
+            totalCarrotsCount -= price;
+            return true;
+        }
+        
+        return false;
+    }
+
+    public void AddCarrots(double value)
+    {
+        totalCarrotsCount += value;
+
+        UpdateCarrotsText();
+
+        SaveData();
     }
 
     public void AddCarrots(float value)
